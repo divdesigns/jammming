@@ -52,11 +52,11 @@ updatePlaylistName(name){
   console.log(this.state.playlistName);
 }
 savePlaylist(){
-
-  Spotify.savePlaylist(name,trackList);
 let name = this.state.playlistName;
 
-const trackList = [this.state.playlistTracks.map(track => track.uri)];
+const trackList = this.state.playlistTracks.map(track => track.uri);
+
+  Spotify.savePlaylist(name,trackList);
 
 }
 search(term){
