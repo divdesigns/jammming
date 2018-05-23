@@ -1,5 +1,5 @@
 const clientID = '35e0f19b4fa04d70a816314b510d4b6b';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://divdesigns.surge.sh/';
 let accessToken;
 let expiresIn;
 
